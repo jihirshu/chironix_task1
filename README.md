@@ -16,17 +16,12 @@ Assuming that your system has the husky simulation package, husky navigation pac
 	sudo apt-get update
 	sudo apt-get install ros-melodic-husky-simulator
 	export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.gazebo.xacro
-	sudo apt-get install ros-melodic-husky-navigation
-	sudo apt-get install ros-melodic-husky-viz
 
-Please make sure that everything is in order by running these four commands in separate terminals : 
+Please make sure that everything is in order by running this command in a terminal : 
 
 	roslaunch husky_gazebo husky_empty_world.launch
-	roslaunch husky_gazebo husky_playpen.launch
-	roslaunch husky_viz view_robot.launch
-	roslaunch husky_navigation amcl_demo.launch
 
-If any of the above commands repeatedly fail, make sure that the instructions on this [tutorial](http://wiki.ros.org/Robots/Husky) has been followed.		
+If the above command repeatedly fails, make sure that the instructions on this [tutorial](http://wiki.ros.org/Robots/Husky) has been followed.		
 
 
 # Task 1 Installation:
