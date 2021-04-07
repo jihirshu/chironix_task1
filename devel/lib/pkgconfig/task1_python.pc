@@ -1,8 +1,0 @@
-prefix=/home/jihirshu/workspace/husky_task1/devel
-
-Name: task1_python
-Description: Description of task1_python
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
