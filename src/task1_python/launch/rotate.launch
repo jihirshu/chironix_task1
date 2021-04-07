@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+   <node pkg="task1_python" name="task1_python" type="task1_python.py" >   		
+   </node>
+</launch>
