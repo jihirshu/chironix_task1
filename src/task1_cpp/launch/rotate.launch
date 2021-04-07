@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+   <node pkg="task1_cpp" name="task1_cpp" type="task1_cpp" >   		
+   </node>
+</launch>
