@@ -21,15 +21,6 @@ ros::Rate rate(10);
 geometry_msgs::Twist msg;
 
 
-// ros::Time timeNow = ros::Time::now();
-// ros::Duration filler(0.5);
-// while(ros::Time::now() < timeNow + filler )
-// {
-
-//     std::cout<<"BUG"<<std::endl;
-//     rate.sleep();
-// }
-
 ros::Duration(0.5).sleep();
 
 ros::Time ClockWiseLoop = ros::Time::now();
@@ -40,7 +31,7 @@ while(ros::Time::now() < ClockWiseLoop + floop )
     msg.angular.z=-0.25;
 //Publish the message
     pub.publish(msg);
-    // std::cout<<"Moving clockwise"<<std::endl;
+   
     rate.sleep();
 }
 
@@ -54,10 +45,9 @@ while(ros::Time::now() < antiClockWiseLoop + sloop )
     msg.angular.z=0.25;
 //Publish the message
     pub.publish(msg);
-    // std::cout<<"Moving anticlockwise"<<std::endl;
+    
     rate.sleep();
 }
-//Delays until it is time to send another message
     
     
 }
